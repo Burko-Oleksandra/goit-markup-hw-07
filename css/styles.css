@@ -408,6 +408,11 @@ body {
   outline-color: var(--accent-color);
 }
 
+.modal__inputt:focus ~ .modal__icon,
+.modal__input:hover ~ .modal__icon {
+  fill: var(--accent-color);
+}
+
 .modal__comment {
   height: 120px;
   padding: 12px 16px;
@@ -417,9 +422,13 @@ body {
   resize: none;
 }
 
-.modal__inputt:focus ~ .modal__icon,
-.modal__input:hover ~ .modal__icon {
-  fill: var(--accent-color);
+.modal__comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 /* .checkbox__text {
