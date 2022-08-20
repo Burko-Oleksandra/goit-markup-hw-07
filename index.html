@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="page">
@@ -57,14 +57,14 @@
     <main>
       <section class="section hero">
         <div class="image">
-          <div class="container">
+          <div class="container hero__container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button data-modal-open type="button" class="hero__button hero__button--blue">
               Замовити послугу
             </button>
           </div>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+            <div class="modal modal__is-hidden">
               <div class="modal__form">
                 <button data-modal-close type="button" class="button__icon">
                   <svg width="11px" height="11px">
@@ -73,7 +73,7 @@
                 </button>
                 <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
                 <form autocomplete="off">
-                  <label for="name">Ім'я</label>
+                  <label for="name" class="modal__label">Ім'я</label>
                   <div class="modal__list">
                     <input type="text" name="name" id="name" class="modal__input" /><svg
                       width="18px"
@@ -83,14 +83,14 @@
                       <use href="./images/icons.svg#person-black"></use>
                     </svg>
                   </div>
-                  <label for="tel">Телефон</label>
+                  <label for="tel" class="modal__label">Телефон</label>
                   <div class="modal__list">
                     <input type="tel" name="tel" id="tel" class="modal__input" />
                     <svg width="18px" height="18px" class="modal__icon">
                       <use href="./images/icons.svg#phone-black"></use>
                     </svg>
                   </div>
-                  <label for="email">Пошта</label>
+                  <label for="email" class="modal__label">Пошта</label>
                   <div class="modal__list">
                     <input type="email" name="email" id="email" class="modal__input" /><svg
                       width="18px"
@@ -100,14 +100,14 @@
                       <use href="./images/icons.svg#email-black"></use>
                     </svg>
                   </div>
-                  <label
+                  <label class="modal__label"
                     >Коментар<textarea
                       name="feedback"
                       placeholder="Введіть текст"
                       class="modal__input modal__comment"
                     ></textarea>
                   </label>
-                  <label class="checkbox">
+                  <label class="checkbox" class="modal__label">
                     <input type="checkbox" name="agree" class="checkbox__input" /><span
                       class="checkbox__icon"
                     >
