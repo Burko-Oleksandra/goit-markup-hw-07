@@ -96,10 +96,8 @@
 }
 
 .address {
-  &__list {
-    & .address__item + .address__item {
-      margin-top: 9px;
-    }
+  &__list .address__item + .address__item {
+    margin-top: 9px;
   }
 
   &__link {
