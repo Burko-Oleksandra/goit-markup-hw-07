@@ -57,10 +57,10 @@ body {
   padding-bottom: 94px;
 }
 
-.page {
+.header {
   border-bottom: 1px solid #ececec;
 }
-.page__container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,15 +110,15 @@ body {
   transform: translateY(1px);
 }
 
-.auth__list {
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.auth__list .auth__item + .auth__item {
+.contact .contact__item + .contact__item {
   margin-left: 30px;
 }
-.auth__link {
+.contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,13 +129,13 @@ body {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auth__link:hover {
+.contact__link:hover {
   color: #2196f3;
 }
-.auth__link:focus {
+.contact__link:focus {
   color: #2196f3;
 }
-.auth__icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -192,7 +192,19 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.hero__button {
+
+.image {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studia/solutions.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.button {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -204,7 +216,7 @@ body {
   text-align: center;
   color: #ffffff;
 }
-.hero__button--blue {
+.button--blue {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -213,24 +225,13 @@ body {
   background-color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__button--blue:hover {
+.button--blue:hover {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.hero__button--blue:focus {
+.button--blue:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.image {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studia/solutions.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .backdrop {
@@ -285,7 +286,7 @@ body {
   text-transform: none;
   text-align: center;
 }
-.modal__label {
+.modal__name {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -591,6 +592,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social .social__item + .social__item {
+  margin-left: 10px;
+}
+.social__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -599,19 +610,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social:hover {
+.social__image:hover {
   color: #ffffff;
   background-color: #2196f3;
-}
-.social__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-.social__list .social__item + .social__item {
-  margin-left: 10px;
 }
 .social__link:focus .social {
   color: #ffffff;
@@ -779,7 +780,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
-.social__list--gray {
+.social--gray {
   padding: 0;
 }
 

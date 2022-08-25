@@ -67,32 +67,32 @@
   align-items: center;
   justify-content: center;
 
-  width: 44px;
-  height: 44px;
+  padding-left: 32px;
+  padding-right: 32px;
 
-  border-radius: 50%;
-
-  color: $iconColor;
-
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: $timingFunction;
-
-  &:hover {
-    color: $backgroundColor;
-    background-color: $accentColor;
+  & .social__item + .social__item {
+    margin-left: 10px;
   }
 
-  &__list {
+  &__image {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 44px;
+    height: 44px;
 
-    & .social__item + .social__item {
-      margin-left: 10px;
+    border-radius: 50%;
+
+    color: $iconColor;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+    &:hover {
+      color: $backgroundColor;
+      background-color: $accentColor;
     }
   }
 

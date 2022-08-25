@@ -1,4 +1,4 @@
-.page {
+.header {
   border-bottom: 1px solid #ececec;
 
   &__container {
@@ -67,15 +67,13 @@
   }
 }
 
-.auth {
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    & .auth__item + .auth__item {
-      margin-left: 30px;
-    }
+  & .contact__item + .contact__item {
+    margin-left: 30px;
   }
 
   &__link {
